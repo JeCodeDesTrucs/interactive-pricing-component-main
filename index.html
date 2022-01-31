@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="scss/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet"> 
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+</head>
+<body>
+  <main>
+    <div class="hero">
+      <h1 class="hero__title">Simple, traffic-based pricing</h1>
+      <p class="hero__text">
+        Sign-up for our 30-day trial. No credit card required. 
+      </p>
+    </div>
+  
+    <div class="card">
+      <div class="card__interactive">
+        <div class="card__interactive__range">
+          <p class="card__interactive__pageviews">
+            <span class="card__interactive__pageviews__value">10K</span> 
+            Pageviews
+          </p>
+          <input type="range" class="card__interactive__range-input" min="0" max="4">
+          <p class="card__interactive__month">
+            <span class="card__interactive__month__value">$16.00</span> 
+            / month
+          </p>
+        </div>
+        <div class="card__interactive__check">
+          <p class="card__interactive__check__month">Monthly Billing</p>
+          <input type="checkbox" class="card__interactive__check-box">
+          <p class="card__interactive__check__yearly">Yearly Billing 
+            <span class="card__interactive__check__yearly__discount"></span>
+          </p>
+        </div>
+      </div>
+      <hr class="card__separation">
+      <div class="card__infos">
+        <ul class="card__infos__list">
+          <li>Unlimited websites</li>
+          <li>100% data ownership</li>
+          <li>Email reports</li>
+        </ul>
+        <button class="card__infos__btn">Start my trial</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
