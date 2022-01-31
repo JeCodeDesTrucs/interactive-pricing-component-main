@@ -294,7 +294,7 @@ body{
 
             .card{
                 max-width: 500px;
-
+                min-width: 500px;
                 .card__interactive{
                     .card__interactive__range{
                         grid-template: repeat(2, 1fr)/repeat(2, 1fr);
